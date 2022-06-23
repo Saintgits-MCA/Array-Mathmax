@@ -7,17 +7,16 @@
     <title>Math.max in JS Array</title>
     <script>
          function Maximum()
-      {  var i;
+      {  var i,j;
         var n = document.getElementById("n").value;
         var elements= new Array(n);
         for(i=0;i<n;i++)
-        {
-            elements[i] = prompt("Enter the element "+ i +" to array:");
+        {    j=i+1;
+            elements[i] = prompt("Enter the element "+ j +" to array:");
         }
          document.getElementById("full").value= elements;  
          i=Math.max(...elements);
         document.getElementById("Maximum").value=i ;
-        document.write(i +" is the Greatest number of array" + elements)
 
      }
     </script>
